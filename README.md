@@ -1,2 +1,2 @@
 # talithawesson.com
-## a simple Yeoman Webapp
+## a creative portfolio
