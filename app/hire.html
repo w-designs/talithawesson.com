@@ -63,75 +63,97 @@
         </div>
         <!-- /.navbar-collapse -->
     </nav>
-    <form role="form">
-        <div class="form-group">
-            <input type="text" class="form-control" placeholder="Name">
-            <input type="text" class="form-control" placeholder="Company ">
-            <input type="text" class="form-control" placeholder="Phone #">
-            <input type="text" class="form-control" placeholder="Txt Msg #">
-
-            <label for="exampleInputEmail1"></label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-        </div>
-        <input type="textarea" class="form-control" id="exampleInputEmail1" placeholder="Describe the project & your needs">
-        <br>
-        <div class="form-group">
-            <label for="exampleInputFile">Have a file to attach?</span></label>
-            <input type="file" id="exampleInputFile">
-            <br>
-            <div>
-                <p class="help-block">Type of Project:</p>
+    <div class="row">
+        <form class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3" role="form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Name">
             </div>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox"> Website Design
-                </label>
+            <div class="form-group">
+                <label for="company">Company:</label>
+                <input type="text" class="form-control" id="company" placeholder="Company ">
             </div>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox"> Print Design
-                </label>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="text" class="form-control" id="phone" placeholder="Phone #">
             </div>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox"> Photo Retouching
-                </label>
+            <div class="form-group">
+                <label for="text-number">Text Msg #:</label>
+                <input type="text" class="form-control" id="text-number" placeholder="Txt Msg #">
             </div>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox"> Abstract Painting
-                </label>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="project-description">Project Description:</label>
+                <textarea name="project-description" id="project-description" class="form-control" rows="8"
+                          placeholder="Describe the project & your needs"></textarea>
             </div>
 
-            <select class="form-control">
-                <option>At what phase is the preparation of your content?</option>
-                <option>Final Phase - Finished content. Ready to build!</option>
-                <option>Semifinal Phase - A few final edits needed</option>
-                <option>Middle Phase - Rough draft</option>
-                <option>Early Phase - Many fundamental content decisions still to make</option>
-                <option>Phase B - Beginning stages of choosing content</option>
-                <option>Phase A - I have no clue what I want, help!</option>
-            </select>
-            <select class="form-control forward-1" id="payment-options">
-                <option>Paying Upfront</option>
-                <option>Pay half upfront and half when site launches</option>
-                <option>Monthly payments over time</option>
-                <option>Trade</option>
-                <option>Sliding scale</option>
-                <option>Donation</option>
-                <option>Other</option>
-            </select>
-            <input type="text" class="form-control" id="other" placeholder="Please elaborate:">
+            <div class="form-group">
+                <label for="attachment">Have a file to attach?</label>
+                <input type="file" id="attachment">
+            </div>
+
+            <div class="help-block">
+                <p>Type of Project:</p>
+            </div>
+
+            <div class="form-group">
+                <label><input type="checkbox" value="web-design" id="web-design"/> Web Design</label>
+            </div>
+
+            <div class="form-group">
+                <label><input type="checkbox" value="print-design" id="print-design"/> Print Design</label>
+            </div>
+            <div class="form-group">
+                <label><input type="checkbox" value="web-design" id="photo-retouching"/> Photo Retouching</label>
+            </div>
+            <div class="form-group">
+                <label><input type="checkbox" value="abstract-painting" id="abstract-painting"/> Abstract Painting</label>
+            </div>
+
+            <div class="form-group">
+                <label for="timeline">Timeline:</label>
+                <select class="form-control" id="timeline">
+                    <option>At what phase is the preparation of your content?</option>
+                    <option>Final Phase - Finished content. Ready to build!</option>
+                    <option>Semifinal Phase - A few final edits needed</option>
+                    <option>Middle Phase - Rough draft</option>
+                    <option>Early Phase - Many fundamental content decisions still to make</option>
+                    <option>Phase B - Beginning stages of choosing content</option>
+                    <option>Phase A - I have no clue what I want, help!</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="payment-options">Payment Options:</label>
+                <select class="form-control forward-1" id="payment-options">
+                    <option>Paying Upfront</option>
+                    <option>Pay half upfront and half when site launches</option>
+                    <option>Monthly payments over time</option>
+                    <option>Trade</option>
+                    <option>Sliding scale</option>
+                    <option>Donation</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="other">Other:</label>
+                <input type="text" class="form-control" id="other" placeholder="Please elaborate:">
+            </div>
 
             <button type="submit" class="btn btn-default backward-1 btn-change-up-4">Submit Request</button>
-        </div>
-    </form>
-</div><!-- end of container -->
+        </form>
+    </div>
+</div>
+<!-- end of container -->
 
 
 <!-- build:js scripts/vendor.js -->
 <!-- bower:js -->
 <script src="bower_components/jquery/jquery.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 

@@ -110,7 +110,6 @@ body {
   }
 }
 
-
 /////////////////////
 //
 // - List item color is handled by the 'a'
@@ -127,6 +126,7 @@ body {
     color: lighten(black, 5%);
   }
 }
+
 // Colorful nav items
 .nav {
   .pink, .orange, .yellow, .blue, .dark-blue, .purple, .green, .gray {
@@ -164,6 +164,7 @@ body {
     background-color: #737373;
   }
 }
+
 /////////////////////
 
 .navbar-default .navbar-toggle {
