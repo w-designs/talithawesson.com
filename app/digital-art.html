@@ -25,7 +25,7 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
 
 </head>
-<body>
+<body ng-app="">
 <!--[if lt IE 10]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your
     browser</a> to improve your experience.</p>
@@ -64,54 +64,47 @@
         <!-- /.navbar-collapse -->
     </nav>
 
-    <div class="row">
-        <div class="col-md-6">
-            <a href="#" class="thumbnail">
-                <img src="images/artdigital1.jpg"
-                     alt="image: curvy abstract puzzle pieces that make up a funky hummingbird-like family crest looking piece of digital art">
-            </a>
-        </div>
-        <div class="col-md-6">
-            <a href="#" class="thumbnail">
-                <img src="images/artdigital2.jpg" alt="image: same curvy abstract puzzle piece art, in a different color scheme.">
-            </a>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <a href="#" class="thumbnail">
-                    <img src="images/artdigital4.jpg"
-                         alt="image: this art is diplayed on the homepage, but here it's been given a different color treatment. turquoise, pink and white. ">
-                </a>
-            </div>
-            <div class="col-md-6">
-                <a href="#" class="thumbnail">
-                    <img src="images/artdigital5.jpg"
-                         alt="image: same art again, another color treatment. purple, blues and greens with a little black and white.">
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <a href="#" class="thumbnail">
-                    <img src="images/artdigital6.jpg"
-                         alt="image: and one last time for this art in yet another color scheme. simply black and white this time.">
-                </a>
-            </div>
-            <div class="col-md-6">
-                <a href="#" class="thumbnail">
-                    <img src="images/artdigital7.jpg"
-                         alt="image: and one last time for this art in yet another color scheme. simply black and white this time.">
-                </a>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <a href="#" class="thumbnail">
-                        <img src="images/artdigital8.jpg"
-                             alt="image: and one last time for this art in yet another color scheme. simply black and white this time.">
-                    </a>
-                </div>
 
+
+    <!-- Row of thumbnail images to navigate main display image -->
+    <div class="row" ng-init="image=1">
+        <div ng-click="image=1" class="col-sm-1"><img class="img-responsive" src="images/artdigital1tn.jpg" alt="thumbnail"/>
+        </div>
+        <div ng-click="image=2" class="col-sm-1"><img class="img-responsive" src="images/artdigital2tn.jpg" alt="thumbnail"/>
+        </div>
+        <div ng-click="image=3" class="col-sm-1"><img class="img-responsive" src="images/artdigital3tn.jpg" alt="thumbnail"/>
+        </div>
+        <div ng-click="image=4" class="col-sm-1"><img class="img-responsive" src="images/artdigital4tn.jpg" alt="thumbnail"/>
+        </div>
+        <div ng-click="image=5" class="col-sm-1"><img class="img-responsive" src="images/artdigital5tn.jpg" alt="thumbnail"/>
+        </div>
+        <div ng-click="image=6" class="col-sm-1"><img class="img-responsive" src="images/artdigital6tn.jpg" alt="thumbnail"/>
+        </div>
+        <div ng-click="image=1" class="col-sm-1"><img class="img-responsive" src="images/artdigital7tn.jpg" alt="thumbnail"/>
+        </div>
+        <div ng-click="image=2" class="col-sm-1"><img class="img-responsive" src="images/artdigital8tn.jpg" alt="thumbnail"/>
+        </div>
+
+    </div>
+
+    <!-- Main display image -->
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 image-display">
+            <div ng-show="image==1"><img class="img-responsive" src="images/artdigital1.jpg" alt="thumbnail"/>
             </div>
+            <div ng-show="image==2"><img class="img-responsive" src="images/artdigital2.jpg" alt="thumbnail"/>
+            </div>
+            <div ng-show="image==3"><img class="img-responsive" src="images/artdigital3.jpg" alt="thumbnail"/>
+            </div>
+            <div ng-show="image==4"><img class="img-responsive" src="images/artdigital4.jpg" alt="thumbnail"/>
+            </div>
+            <div ng-show="image==5"><img class="img-responsive" src="images/artdigital5.jpg" alt="thumbnail"/>
+            </div>
+            <div ng-show="image==6"><img class="img-responsive" src="images/artdigital6.jpg" alt="thumbnail"/>
+            </div>
+        </div>
+    </div>
+</div>
             <!-- closes the row -->
 
 

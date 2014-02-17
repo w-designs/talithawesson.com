@@ -25,7 +25,7 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
 
 </head>
-<body>
+<body ng-app="">
 <!--[if lt IE 10]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your
     browser</a> to improve your experience.</p>
@@ -63,34 +63,33 @@
         </div>
         <!-- /.navbar-collapse -->
     </nav>
-
-    <div class="row">
-        <div class="col-md-6">
-            <a href="http://wdesigns.co/" class="thumbnail">
-                <img src="images/web5.jpg" alt="sample image of w designs website">
-            </a>
+    <!-- Row of thumbnail images to navigate main display image -->
+    <div class="row" ng-init="image=1">
+        <div ng-click="image=1" class="col-sm-1"><img class="img-responsive" src="images/swoosh2-small-flattened.jpg" alt="thumbnail"/>
         </div>
-        <div class="col-md-6">
-            <a href="http://nuptialart.net/photography.html" class="thumbnail">
-                <img src="images/web4.jpg" alt="sample image of nuptial art website">
-            </a>
+        <div ng-click="image=2" class="col-sm-1"><img class="img-responsive" src="images/web4tn.jpg" alt="thumbnail"/>
         </div>
-        <div class="col-md-6">
-            <a href="http://gypsy-cafe.com/" class="thumbnail">
-                <img src="images/web1.jpg" alt="sample image of gypsy cafe website">
-            </a>
+        <div ng-click="image=3" class="col-sm-1"><img class="img-responsive" src="images/web3tn.jpg" alt="thumbnail"/>
         </div>
-        <div class="col-md-6">
-            <a href="http://heartpathhealing.com/new/" class="thumbnail">
-                <img src="images/web3.jpg" alt="sample image of heart path healing website">
-            </a>
+        <div ng-click="image=4" class="col-sm-1"><img class="img-responsive" src="images/web2tn.jpg" alt="thumbnail"/>
+        </div>
+        <div ng-click="image=5" class="col-sm-1"><img class="img-responsive" src="images/web1tn.jpg" alt="thumbnail"/>
         </div>
     </div>
+
+    <!-- Main display image -->
     <div class="row">
-        <div class="col-md-6">
-            <a href="http://www.drdoylerood.com/" class="thumbnail">
-                <img src="images/web2.jpg" alt="sample image of doctor doyle rood's website">
-            </a>
+        <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 image-display">
+            <div ng-show="image==1"><img class="img-responsive" src="images/swoosh2-small-flattened.jpg" alt="main image display"/>
+            </div>
+            <div ng-show="image==2"><img class="img-responsive" src="images/web4.jpg" alt="main image display"/>
+            </div>
+            <div ng-show="image==3"><img class="img-responsive" src="images/web3.jpg" alt="main image display"/>
+            </div>
+            <div ng-show="image==4"><img class="img-responsive" src="images/web2.jpg" alt="main image display"/>
+            </div>
+            <div ng-show="image==5"><img class="img-responsive" src="images/web1.jpg" alt="main image display"/>
+            </div>
         </div>
     </div>
 
