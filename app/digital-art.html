@@ -22,6 +22,8 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    <!-- Lightbox 2 -->
+    <link href="css/lightbox.css" rel="stylesheet" />
     <script src="bower_components/modernizr/modernizr.js"></script>
 
 </head>
@@ -64,114 +66,71 @@
         <!-- /.navbar-collapse -->
     </nav>
 
-    <!-- Row of thumbnail images to navigate main display image -->
-    <div class="row thumbnail-nav" ng-init="image=1">
-        <div ng-click="image=1" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/artdigital0.png" alt="thumbnail"/>
-        </div>
-        <div ng-click="image=2" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/artdigital01.jpg" alt="thumbnail"/>
-        </div>
-        <div ng-click="image=3" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/artdigital1.jpg" alt="thumbnail"/>
-        </div>
-        <div ng-click="image=4" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/artdigital2.jpg" alt="thumbnail"/>
-        </div>
-        <div ng-click="image=5" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/artdigital3.jpg" alt="thumbnail"/>
-        </div>
-        <div ng-click="image=6" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/artdigital4.jpg" alt="thumbnail"/>
-        </div>
-        <div ng-click="image=7" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/artdigital5.jpg" alt="thumbnail"/>
-        </div>
-        <div ng-click="image=8" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/artdigital6.jpg" alt="thumbnail"/>
-        </div>
-        <div ng-click="image=9" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/artdigital11-tn.png" alt="thumbnail"/>
-        </div>
-        <div ng-click="image=10" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/artdigital8.jpg" alt="thumbnail"/>
-        </div>
-        <div ng-click="image=11" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/artdigital9.jpg" alt="thumbnail"/>
-        </div>
-        <div ng-click="image=12" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/artdigital10.jpg" alt="thumbnail"/>
-        </div>
-    </div>
-
+    <!-- Row of thumbnail images to navigate lightbox modal -->
     <div class="row thumbnail-nav">
-        <div ng-click="image=1" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/artdigital1.jpg" alt="thumbnail"/>
+        <div class="col-sm-1">
+            <a href="images/artdigital0.png" data-lightbox="digital-art" title="color wheel">
+                <img class="img-responsive img-thumbnail" src="images/artdigital0-tn.png"/>
+            </a>
         </div>
-        <div ng-click="image=2" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/artdigital1.jpg" alt="thumbnail"/>
+        <div class="col-sm-1">
+            <a href="images/artdigital01.jpg" data-lightbox="digital-art">
+                <img class="img-responsive img-thumbnail" src="images/artdigital01tn.jpg"/>
+            </a>
         </div>
-        <div ng-click="image=3" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/artdigital1.jpg" alt="thumbnail"/>
+        <div class="col-sm-1">
+            <a href="images/artdigital10.jpg" data-lightbox="digital-art">
+                <img class="img-responsive img-thumbnail" src="images/artdigital10-tn.jpg"/>
+            </a>
         </div>
-        <div ng-click="image=4" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/artdigital1.jpg" alt="thumbnail"/>
+        <div class="col-sm-1">
+            <a href="images/artdigital2.jpg" data-lightbox="digital-art">
+                <img class="img-responsive img-thumbnail" src="images/artdigital2tn.jpg"/>
+            </a>
         </div>
-        <div ng-click="image=5" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/artdigital1.jpg" alt="thumbnail"/>
+        <div class="col-sm-1">
+            <a href="images/artdigital3.jpg" data-lightbox="digital-art">
+                <img class="img-responsive img-thumbnail" src="images/artdigital3tn.jpg"/>
+            </a>
         </div>
-        <div ng-click="image=6" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/artdigital1.jpg" alt="thumbnail"/>
+        <div class="col-sm-1">
+            <a href="images/artdigital4.jpg" data-lightbox="digital-art">
+                <img class="img-responsive img-thumbnail" src="images/artdigital4tn.jpg"/>
+            </a>
         </div>
-        <div ng-click="image=7" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/artdigital1.jpg" alt="thumbnail"/>
+        <div class="col-sm-1">
+            <a href="images/artdigital5.jpg" data-lightbox="digital-art">
+                <img class="img-responsive img-thumbnail" src="images/artdigital5tn.jpg"/>
+            </a>
         </div>
-        <div ng-click="image=8" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/artdigital1.jpg" alt="thumbnail"/>
+        <div class="col-sm-1">
+            <a href="images/artdigital6.jpg" data-lightbox="digital-art">
+                <img class="img-responsive img-thumbnail" src="images/artdigital6tn.jpg"/>
+            </a>
         </div>
-        <div ng-click="image=9" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/artdigital1.jpg" alt="thumbnail"/>
+        <div class="col-sm-1">
+            <a href="images/artdigital11.png" data-lightbox="digital-art">
+                <img class="img-responsive img-thumbnail" src="images/artdigital11-tn.png"/>
+            </a>
         </div>
-        <div ng-click="image=10" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/artdigital1.jpg" alt="thumbnail"/>
+        <div class="col-sm-1">
+            <a href="images/artdigital8.jpg" data-lightbox="digital-art">
+                <img class="img-responsive img-thumbnail" src="images/artdigital8tn.jpg"/>
+            </a>
         </div>
-        <div ng-click="image=11" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/artdigital1.jpg" alt="thumbnail"/>
+        <div class="col-sm-1">
+            <a href="images/artdigital9.jpg" data-lightbox="digital-art">
+                <img class="img-responsive img-thumbnail" src="images/artdigital9--tn.png"/>
+            </a>
         </div>
-        <div ng-click="image=12" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/artdigital1.jpg" alt="thumbnail"/>
+        <div class="col-sm-1">
+            <a href="images/artdigital12.jpg" data-lightbox="digital-art">
+                <img class="img-responsive img-thumbnail" src="images/artdigital12tn.jpg"/>
+            </a>
         </div>
     </div>
 
-    <!-- Main display image -->
-    <div class="row">
-        <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-            <div ng-show="image==1"><img class="img-responsive" src="images/artdigital0.png" alt="thumbnail"/>
-            </div>
-            <div ng-show="image==2"><img class="img-responsive" src="images/artdigital01.jpg" alt="thumbnail"/>
-            </div>
-            <div ng-show="image==3"><img class="img-responsive" src="images/artdigital1.jpg" alt="thumbnail"/>
-            </div>
-            <div ng-show="image==4"><img class="img-responsive" src="images/artdigital2.jpg" alt="thumbnail"/>
-            </div>
-            <div ng-show="image==5"><img class="img-responsive" src="images/artdigital3.jpg" alt="thumbnail"/>
-            </div>
-            <div ng-show="image==6"><img class="img-responsive" src="images/artdigital4.jpg" alt="thumbnail"/>
-            </div>
-            <div ng-show="image==7"><img class="img-responsive" src="images/artdigital5.jpg" alt="thumbnail"/>
-            </div>
-            <div ng-show="image==8"><img class="img-responsive" src="images/artdigital6.jpg" alt="thumbnail"/>
-            </div>
-            <div ng-show="image==9"><img class="img-responsive" src="images/artdigital11.png" alt="thumbnail"/>
-            </div>
-            <div ng-show="image==10"><img class="img-responsive" src="images/artdigital8.jpg" alt="thumbnail"/>
-            </div>
-            <div ng-show="image==11"><img class="img-responsive" src="images/artdigital9.jpg" alt="thumbnail"/>
-            </div>
-            <div ng-show="image==12"><img class="img-responsive" src="images/artdigital10.jpg" alt="thumbnail"/>
-            </div>
-            <div ng-show="image==13"><img class="img-responsive" src="images/artdigital11.png" alt="thumbnail"/>
-            </div>
-            <div ng-show="image==14"><img class="img-responsive" src="images/artdigital1.jpg" alt="thumbnail"/>
-            </div>
-            <div ng-show="image==15"><img class="img-responsive" src="images/artdigital1.jpg" alt="thumbnail"/>
-            </div>
-            <div ng-show="image==16"><img class="img-responsive" src="images/artdigital1.jpg" alt="thumbnail"/>
-            </div>
-            <div ng-show="image==17"><img class="img-responsive" src="images/artdigital1.jpg" alt="thumbnail"/>
-            </div>
-            <div ng-show="image==18"><img class="img-responsive" src="images/artdigital1.jpg" alt="thumbnail"/>
-            </div>
-            <div ng-show="image==19"><img class="img-responsive" src="images/artdigital1.jpg" alt="thumbnail"/>
-            </div>
-            <div ng-show="image==20"><img class="img-responsive" src="images/artdigital1.jpg" alt="thumbnail"/>
-            </div>
-            <div ng-show="image==21"><img class="img-responsive" src="images/artdigital1.jpg" alt="thumbnail"/>
-            </div>
-            <div ng-show="image==22"><img class="img-responsive" src="images/artdigital1.jpg" alt="thumbnail"/>
-            </div>
-            <div ng-show="image==23"><img class="img-responsive" src="images/artdigital1.jpg" alt="thumbnail"/>
-            </div>
-            <div ng-show="image==24"><img class="img-responsive" src="images/artdigital1.jpg" alt="thumbnail"/>
-            </div>
-        </div>
-    </div>
+
 </div>
 
 
