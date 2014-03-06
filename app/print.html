@@ -22,6 +22,8 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    <!-- Lightbox 2 -->
+    <link href="css/lightbox.css" rel="stylesheet" />
     <script src="bower_components/modernizr/modernizr.js"></script>
 
 </head>
@@ -64,31 +66,69 @@
         <!-- /.navbar-collapse -->
     </nav>
 
-    <!-- Row of thumbnail images to navigate main display image -->
+
+
+    <!-- Row of thumbnail images to navigate lightbox modal -->
     <div class="row thumbnail-nav" ng-init="image=1">
-        <div ng-click="image=1" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/print95--tn.jpg" alt="thumbnail"/>
+        <div class="col-sm-1">
+            <a href="images/print95--.jpg" data-lightbox="print">
+                <img class="img-responsive img-thumbnail" src="images/print95--tn.jpg"/>
+            </a>
         </div>
-        <div ng-click="image=2" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/print86--tn.jpg" alt="thumbnail"/>
+        <div class="col-sm-1">
+            <a href="images/print86--.jpg" data-lightbox="print">
+                <img class="img-responsive img-thumbnail" src="images/print86--tn.jpg"/>
+            </a>
         </div>
-        <div ng-click="image=3" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/print80--tn.jpg" alt="thumbnail"/>
+        <div class="col-sm-1">
+            <a href="images/print80--.jpg" data-lightbox="print">
+                <img class="img-responsive img-thumbnail" src="images/print80--tn.jpg"/>
+            </a>
         </div>
-        <div ng-click="image=4" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/print84--tn.jpg" alt="thumbnail"/>
+        <div class="col-sm-1">
+            <a href="images/print84--.jpg" data-lightbox="print">
+                <img class="img-responsive img-thumbnail" src="images/print84--tn.jpg"/>
+            </a>
         </div>
-        <div ng-click="image=5" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/print6--tn.jpg" alt="thumbnail"/>
+        <div class="col-sm-1">
+            <a href="images/print6--.jpg" data-lightbox="print">
+                <img class="img-responsive img-thumbnail" src="images/print6--tn.jpg"/>
+            </a>
         </div>
-        <div ng-click="image=6" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/print4--tn.jpg" alt="thumbnail"/>
+        <div class="col-sm-1">
+            <a href="images/print4--.jpg" data-lightbox="print">
+                <img class="img-responsive img-thumbnail" src="images/print4--tn.jpg"/>
+            </a>
         </div>
-        <div ng-click="image=7" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/print36--tn.jpg" alt="thumbnail"/>
+        <div class="col-sm-1">
+            <a href="images/print36--.jpg" data-lightbox="print">
+                <img class="img-responsive img-thumbnail" src="images/print36--tn.jpg"/>
+            </a>
         </div>
-        <div ng-click="image=8" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/print38--tn.jpg" alt="thumbnail"/>
+        <div class="col-sm-1">
+            <a href="images/print38--.jpg" data-lightbox="print">
+                <img class="img-responsive img-thumbnail" src="images/print38--tn.jpg"/>
+            </a>
         </div>
-        <div ng-click="image=9" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/print40--tn.jpg" alt="thumbnail"/>
+        <div class="col-sm-1">
+            <a href="images/print40--tn.jpg" data-lightbox="print">
+                <img class="img-responsive img-thumbnail" src="images/print40--tn.jpg"/>
+            </a>
         </div>
-        <div ng-click="image=10" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/print41--tn.jpg" alt="thumbnail"/>
+        <div class="col-sm-1">
+            <a href="images/print41--.jpg" data-lightbox="print">
+                <img class="img-responsive img-thumbnail" src="images/print41--tn.jpg"/>
+            </a>
         </div>
-        <div ng-click="image=11" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/print44--tn.jpg" alt="thumbnail"/>
+        <div class="col-sm-1">
+            <a href="images/print44--.jpg" data-lightbox="print">
+                <img class="img-responsive img-thumbnail" src="images/print44--tn.jpg"/>
+            </a>
         </div>
-        <div ng-click="image=12" class="col-sm-1"><img class="img-responsive img-thumbnail" src="images/print46--tn.jpg" alt="thumbnail"/>
+        <div class="col-sm-1">
+            <a href="images/print46--.jpg" data-lightbox="print">
+                <img class="img-responsive img-thumbnail" src="images/print46--tn.jpg"/>
+            </a>
         </div>
     </div>
 
@@ -122,30 +162,6 @@
     <!-- Main display image -->
     <div class="row">
         <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-            <div ng-show="image==1"><img class="img-responsive" src="images/print95--.jpg" alt="thumbnail"/>
-            </div>
-            <div ng-show="image==2"><img class="img-responsive" src="images/print86--.jpg" alt="thumbnail"/>
-            </div>
-            <div ng-show="image==3"><img class="img-responsive" src="images/print80--.jpg" alt="thumbnail"/>
-            </div>
-            <div ng-show="image==4"><img class="img-responsive" src="images/print84--.jpg" alt="thumbnail"/>
-            </div>
-            <div ng-show="image==5"><img class="img-responsive" src="images/print6--.jpg" alt="thumbnail"/>
-            </div>
-            <div ng-show="image==6"><img class="img-responsive" src="images/print4--.jpg" alt="thumbnail"/>
-            </div>
-            <div ng-show="image==7"><img class="img-responsive" src="images/print36--.jpg" alt="thumbnail"/>
-            </div>
-            <div ng-show="image==8"><img class="img-responsive" src="images/print38--.jpg" alt="thumbnail"/>
-            </div>
-            <div ng-show="image==9"><img class="img-responsive" src="images/print40--.jpg" alt="thumbnail"/>
-            </div>
-            <div ng-show="image==10"><img class="img-responsive" src="images/print41--.jpg" alt="thumbnail"/>
-            </div>
-            <div ng-show="image==11"><img class="img-responsive" src="images/print44--.jpg" alt="thumbnail"/>
-            </div>
-            <div ng-show="image==12"><img class="img-responsive" src="images/print46--.jpg" alt="thumbnail"/>
-            </div>
             <div ng-show="image==13"><img class="img-responsive" src="images/print47--.jpg" alt="thumbnail"/>
             </div>
             <div ng-show="image==14"><img class="img-responsive" src="images/print50--.jpg" alt="thumbnail"/>
@@ -181,6 +197,9 @@
 <script src="bower_components/angular/angular.min.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
+
+<!-- Lightbox 2 -->
+<script src="js/lightbox-2.6.min.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
