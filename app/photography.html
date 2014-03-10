@@ -22,14 +22,18 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    <!-- Lightbox 2 -->
+    <link href="css/lightbox.css" rel="stylesheet" />
     <script src="bower_components/modernizr/modernizr.js"></script>
 
 </head>
-<body>
+<body ng-app="">
 <!--[if lt IE 10]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your
     browser</a> to improve your experience.</p>
 <![endif]-->
+
+
 
 
 <div class="container">
@@ -63,15 +67,77 @@
         </div>
         <!-- /.navbar-collapse -->
     </nav>
-
-    <div class="row">
-        <div class="col-md-6">
-            <a href="#" class="thumbnail">
-                <img src="images/photo3.jpg"
-                     alt="">
-                <a href="#" class="thumbnail">
-                    <img src="images/photographyA.jpg"
-                         alt="">
+    <!-- Row of thumbnail images to navigate lightbox modal -->
+    <div class="row thumbnail-nav">
+        <div class="col-sm-1">
+            <a href="images/photo0.jpg" data-lightbox="photo">
+                <img class="img-responsive img-thumbnail" src="images/photo0-tn.jpg"/>
+            </a>
+        </div>
+        <div class="col-sm-1">
+            <a href="images/photo1.jpg" data-lightbox="photo">
+                <img class="img-responsive img-thumbnail" src="images/photo1-tn.jpg"/>
+            </a>
+        </div>
+        <div class="col-sm-1">
+            <a href="images/photo3.jpg" data-lightbox="photo">
+                <img class="img-responsive img-thumbnail" src="images/photo3-tn.jpg"/>
+            </a>
+        </div>
+        <div class="col-sm-1">
+            <a href="images/photo4.jpg" data-lightbox="photo">
+                <img class="img-responsive img-thumbnail" src="images/photo4-tn.jpg"/>
+            </a>
+        </div>
+        <div class="col-sm-1">
+            <a href="images/photo5.jpg" data-lightbox="photo">
+                <img class="img-responsive img-thumbnail" src="images/photo5-tn.jpg"/>
+            </a>
+        </div>
+        <div class="col-sm-1">
+            <a href="images/photo6.jpg" data-lightbox="photo">
+                <img class="img-responsive img-thumbnail" src="images/photo6-tn.jpg"/>
+            </a>
+        </div>
+        <div class="col-sm-1">
+            <a href="images/photo7.jpg" data-lightbox="photo">
+                <img class="img-responsive img-thumbnail" src="images/photo7-tn.jpg"/>
+            </a>
+        </div>
+        <div class="col-sm-1">
+            <a href="images/photo8.jpg" data-lightbox="photo">
+                <img class="img-responsive img-thumbnail" src="images/photo8-tn.jpg"/>
+            </a>
+        </div>
+        <div class="col-sm-1">
+            <a href="images/photo9.jpg" data-lightbox="photo">
+                <img class="img-responsive img-thumbnail" src="images/photo9-tn.jpg"/>
+            </a>
+        </div>
+        <div class="col-sm-1">
+            <a href="images/print41--.jpg" data-lightbox="photo">
+                <img class="img-responsive img-thumbnail" src="images/print41--tn.jpg"/>
+            </a>
+        </div>
+        <div class="col-sm-1">
+            <a href="images/print44--.jpg" data-lightbox="photo">
+                <img class="img-responsive img-thumbnail" src="images/print44--tn.jpg"/>
+            </a>
+        </div>
+        <div class="col-sm-1">
+            <a href="images/print46--.jpg" data-lightbox="photo">
+                <img class="img-responsive img-thumbnail" src="images/print46--tn.jpg"/>
+            </a>
+        </div>
+    </div>
+    <!--<div class="row">-->
+        <!--<div class="col-md-6">-->
+            <!--<a href="#" class="thumbnail">-->
+                <!--<img src="images/photo3.jpg"-->
+                     <!--alt="">-->
+                <!--<a href="#" class="thumbnail">-->
+                    <!--<img src="images/photographyA.jpg"-->
+                         <!--alt="">-->
             <!--</a>-->
         <!--</div>-->
         <!--<div class="col-md-6">-->
