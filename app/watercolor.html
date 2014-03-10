@@ -22,10 +22,12 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    <!-- Lightbox 2 -->
+    <link href="css/lightbox.css" rel="stylesheet" />
     <script src="bower_components/modernizr/modernizr.js"></script>
 
 </head>
-<body>
+<body ng-app="">
 <!--[if lt IE 10]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your
     browser</a> to improve your experience.</p>
@@ -64,41 +66,69 @@
         <!-- /.navbar-collapse -->
     </nav>
 
-    <div class="row">
-        <div class="col-md-6">
-            <a href="#" class="thumbnail">
-                <img src="images/artwatercolor1.jpg"
-                     alt="abstract water color painting of colorful clouds in the sky with abstract kite like objects floating in the wind. they seem kind of like they are spinning kites. or if you're really imaginative, they could be little sky beings traveling like a school of fish.">
+    <!-- Row of thumbnail images to navigate lightbox modal -->
+    <div class="row thumbnail-nav">
+        <div class="col-sm-1">
+            <a href="images/artwatercolor1.jpg" data-lightbox="watercolor">
+                <img class="img-responsive img-thumbnail" src="images/artwatercolor1-tn.jpg"/>
             </a>
         </div>
-        <div class="col-md-6">
-            <a href="#" class="thumbnail">
-                <img src="images/artwatercolor2.jpg"
-                     alt="colorful, abstract looking leaves floating with bubbles, atop a rainbow colored riverbed.">
+        <div class="col-sm-1">
+            <a href="images/artwatercolor2.jpg" data-lightbox="watercolor">
+                <img class="img-responsive img-thumbnail" src="images/artwatercolor2-tn.jpg"/>
             </a>
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                <a href="#" class="thumbnail">
-                    <img src="images/artwatercolor3.jpg"
-                         alt="a color splat of firey orange, yellow and pink. or perhaps it's something microscopic, only your imagination knows best.">
-                </a>
-            </div>
-            <div class="col-md-6">
-                <a href="#" class="thumbnail">
-                    <img src="images/artwatercolor4.jpg" alt="colorful tribal shapes outlined in thick black lines.">
-                </a>
-            </div>
+        <div class="col-sm-1">
+            <a href="images/artwatercolor3.jpg" data-lightbox="watercolor">
+                <img class="img-responsive img-thumbnail" src="images/artwatercolor3-tn.jpg"/>
+            </a>
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                <a href="#" class="thumbnail">
-                    <img src="images/artwatercolor5.jpg"
-                         alt="colorful, wonky, wobbly steps with big rounded corners, traveling visually upward to the top of 3 wonkified pyramids. or cakes, yum, layered cakes sound good right about now.">
-                </a>
-            </div>
-
-        </div>
+        <div class="col-sm-1">
+            <a href="images/artwatercolor4.jpg" data-lightbox="watercolor">
+                <img class="img-responsive img-thumbnail" src="images/artwatercolor4-tn.jpg"/>
+            </a>
+        <!--</div>-->
+        <!--<div class="col-sm-1">-->
+            <!--<a href="images/print6--.jpg" data-lightbox="watercolor">-->
+                <!--<img class="img-responsive img-thumbnail" src="images/print6--tn.jpg"/>-->
+            <!--</a>-->
+        <!--</div>-->
+        <!--<div class="col-sm-1">-->
+            <!--<a href="images/print4--.jpg" data-lightbox="watercolor">-->
+                <!--<img class="img-responsive img-thumbnail" src="images/print4--tn.jpg"/>-->
+            <!--</a>-->
+        <!--</div>-->
+        <!--<div class="col-sm-1">-->
+            <!--<a href="images/print36--.jpg" data-lightbox="watercolor">-->
+                <!--<img class="img-responsive img-thumbnail" src="images/print36--tn.jpg"/>-->
+            <!--</a>-->
+        <!--</div>-->
+        <!--<div class="col-sm-1">-->
+            <!--<a href="images/print38--.jpg" data-lightbox="watercolor">-->
+                <!--<img class="img-responsive img-thumbnail" src="images/print38--tn.jpg"/>-->
+            <!--</a>-->
+        <!--</div>-->
+        <!--<div class="col-sm-1">-->
+            <!--<a href="images/print40.jpg" data-lightbox="watercolor">-->
+                <!--<img class="img-responsive img-thumbnail" src="images/print40--tn.jpg"/>-->
+            <!--</a>-->
+        <!--</div>-->
+        <!--<div class="col-sm-1">-->
+            <!--<a href="images/print41--.jpg" data-lightbox="watercolor">-->
+                <!--<img class="img-responsive img-thumbnail" src="images/print41--tn.jpg"/>-->
+            <!--</a>-->
+        <!--</div>-->
+        <!--<div class="col-sm-1">-->
+            <!--<a href="images/print44--.jpg" data-lightbox="watercolor">-->
+                <!--<img class="img-responsive img-thumbnail" src="images/print44--tn.jpg"/>-->
+            <!--</a>-->
+        <!--</div>-->
+        <!--<div class="col-sm-1">-->
+            <!--<a href="images/print46--.jpg" data-lightbox="watercolor">-->
+                <!--<img class="img-responsive img-thumbnail" src="images/print46--tn.jpg"/>-->
+            <!--</a>-->
+        <!--</div>-->
+    </div>
 
 
         <!-- build:js scripts/vendor.js -->
