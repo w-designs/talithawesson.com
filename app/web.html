@@ -22,10 +22,12 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    <!-- Lightbox 2 -->
+    <link href="css/lightbox.css" rel="stylesheet" />
     <script src="bower_components/modernizr/modernizr.js"></script>
 
 </head>
-<body>
+<body ng-app="">
 <!--[if lt IE 10]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your
     browser</a> to improve your experience.</p>
@@ -63,36 +65,33 @@
         </div>
         <!-- /.navbar-collapse -->
     </nav>
-
-    <div class="row">
-        <div class="col-md-6">
-            <a href="http://wdesigns.co/" class="thumbnail">
-                <img src="images/web5.jpg" alt="sample image of w designs website">
+    <!-- Row of thumbnail images to navigate lightbox modal -->
+    <div class="row thumbnail-nav">
+        <div class="col-sm-1">
+            <a href="images/web1.jpg" data-lightbox="web">
+                <img class="img-responsive img-thumbnail" src="images/web1-tn.jpg"/>
             </a>
         </div>
-        <div class="col-md-6">
-            <a href="http://nuptialart.net/photography.html" class="thumbnail">
-                <img src="images/web4.jpg" alt="sample image of nuptial art website">
+        <div class="col-sm-1">
+            <a href="images/web2.jpg" data-lightbox="web">
+                <img class="img-responsive img-thumbnail" src="images/web2-tn.jpg"/>
             </a>
         </div>
-        <div class="col-md-6">
-            <a href="http://gypsy-cafe.com/" class="thumbnail">
-                <img src="images/web1.jpg" alt="sample image of gypsy cafe website">
+        <div class="col-sm-1">
+            <a href="images/web3.jpg" data-lightbox="web">
+                <img class="img-responsive img-thumbnail" src="images/web3-tn.jpg"/>
             </a>
         </div>
-        <div class="col-md-6">
-            <a href="http://heartpathhealing.com/new/" class="thumbnail">
-                <img src="images/web3.jpg" alt="sample image of heart path healing website">
+        <div class="col-sm-1">
+            <a href="images/web4.jpg" data-lightbox="web">
+                <img class="img-responsive img-thumbnail" src="images/web4-tn.jpg"/>
             </a>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <a href="http://www.drdoylerood.com/" class="thumbnail">
-                <img src="images/web2.jpg" alt="sample image of doctor doyle rood's website">
-            </a>
-        </div>
-    </div>
+            </div>
+            <div class="col-sm-1">
+                <a href="images/web5.jpg" data-lightbox="web">
+                    <img class="img-responsive img-thumbnail" src="images/web5-tn.jpg"/>
+                </a>
+            </div>
 
 
     <!-- build:js scripts/vendor.js -->
