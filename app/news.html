@@ -22,12 +22,10 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    <!-- Lightbox 2 -->
-    <link href="css/lightbox.css" rel="stylesheet" />
     <script src="bower_components/modernizr/modernizr.js"></script>
 
 </head>
-<body ng-app="">
+<body>
 <!--[if lt IE 10]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your
     browser</a> to improve your experience.</p>
@@ -66,34 +64,37 @@
         </div>
         <!-- /.navbar-collapse -->
     </nav>
-    <!-- Row of thumbnail images to navigate lightbox modal -->
-    <div class="row thumbnail-nav">
-        <div class="col-xs-6 col-sm-2">
-            <a href="images/web1.jpg" data-lightbox="web">
-                <img class="img-responsive img-thumbnail" src="images/web1-tn.jpg"/>
-            </a>
-        </div>
-        <div class="col-xs-6 col-sm-2">
-            <a href="images/web2.jpg" data-lightbox="web">
-                <img class="img-responsive img-thumbnail" src="images/web2-tn.jpg"/>
-            </a>
-        </div>
-        <div class="col-xs-6 col-sm-2">
-            <a href="images/web3.jpg" data-lightbox="web">
-                <img class="img-responsive img-thumbnail" src="images/web3-tn.jpg"/>
-            </a>
-        </div>
-        <div class="col-xs-6 col-sm-2">
-            <a href="images/web4.jpg" data-lightbox="web">
-                <img class="img-responsive img-thumbnail" src="images/web4-tn.jpg"/>
-            </a>
-            </div>
-            <div class="col-xs-6 col-sm-2">
-                <a href="images/web5.jpg" data-lightbox="web">
-                    <img class="img-responsive img-thumbnail" src="images/web5-tn.jpg"/>
-                </a>
-            </div>
 
+
+    <div class="row rounders feature-3">
+        <div class="col-xs-6 text-right">
+            <h3 class="scripty-heading">New Style</h3>
+            <p>My new spring style is inspired by my multi-media art, and custom designs illustrated from scratch. These designs can be worked into any style of layout for the web, print, or to hang on your wall. Happy Spring!</p>
+        </div>
+        <div class="col-xs-6">
+            <img width="300px" src="images/melting-apples.png" alt=""/img>
+        </div>
+    </div>
+
+    <!--<div class="row">-->
+        <!--<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 feature-3 img-rounded">-->
+            <!--<div class="">-->
+                <!--<h3 class="scripty-heading">New Style</h3>-->
+                <!--<p>My new spring style is inspired by my multi-media art, and custom designs illustrated from scratch. These designs can be worked into any style of layout for the web, print, or to hang on your wall. Happy Spring!</p>-->
+            <!--</div>-->
+
+        <!--</div>-->
+        <!--<div class="row">-->
+            <!--<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 feature-4 img-rounded">-->
+                <!--<div class="">-->
+                    <!--<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-2 col-lg-8 col-lg-offset-2 feature-display">-->
+                        <!--<div class="space"><img width="300px" src="images/abstractbluesuntn.jpg" alt=""/img>-->
+                <!--</div>-->
+            <!--</div>-->
+    <!--</div>-->
+    </div>
+
+    <link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
@@ -101,9 +102,6 @@
     <script src="bower_components/angular/angular.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-
-    <!-- Lightbox 2 -->
-    <script src="js/lightbox-2.6.min.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
