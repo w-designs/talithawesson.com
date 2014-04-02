@@ -236,6 +236,10 @@ padding: 5px;
 
 }
 
+.feature-5 {
+  background-color: #ffffff;
+}
+
 .scripty-heading {
   font: 400 40px/1.5 'Pacifico', Helvetica, sans-serif;
   color: #cceeff;
@@ -247,6 +251,7 @@ padding: 5px;
 
 .feature-display {
   display: inline-block;
+  margin-top: -300px;
 }
 
 .homepage {
@@ -267,3 +272,10 @@ padding: 5px;
 
 .rounders {
 border-radius: 4px}
+
+.lower {
+  padding-top: 700px;
+  text-align: right;
+  color: lightslategray;
+}
+
