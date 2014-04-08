@@ -295,7 +295,7 @@ body {
 
 .testimonial {
   max-height: 260px;
-  width: 400px;
+//  width: 500px;
   overflow: scroll;
   border-radius: 4px;
   background-color: #e5e5e5;
@@ -324,3 +324,18 @@ body {
   background: linear-gradient(#f4f4f4, #777777);
 
 }
+
+.gradient-2 {
+
+  /* can be treated like a fallback */
+  background-color: #dedede;
+
+  /* will be "on top", if browser supports it */
+  background-image: linear-gradient(#f4f4f4, #777777);
+
+  /* these will reset other properties, like background-position, but it does know what you mean */
+  background: #f4f4f4;
+  background: linear-gradient(#f4f4f4, #777777);
+
+}
+
