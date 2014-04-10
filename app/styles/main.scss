@@ -237,7 +237,8 @@ body {
 }
 
 .feature-5 {
-  background-color: #ffffff;
+  background-color: #39a486;
+  padding: 10px;
 }
 
 .scripty-heading {
@@ -252,6 +253,15 @@ body {
 .scripty-heading-2 {
   font: 400 30px/1.5 'Pacifico', Helvetica, sans-serif;
   color: #797979;
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  letter-spacing: 1px;
+  //  margin: 2px;
+}
+
+.scripty-heading-3 {
+  font: 400 40px/1.5 'Pacifico', Helvetica, sans-serif;
+  color: #aad8cf;
   text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
   text-align: center;
   letter-spacing: 1px;
