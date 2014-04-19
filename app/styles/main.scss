@@ -217,7 +217,7 @@ body {
 .feature-3 {
   color: #ffffff;
   background-color: #0097B7;
-  letter-spacing: .5px;
+  letter-spacing: 1px;
 
   //  h3 {
   //    letter-spacing: 2px;
@@ -237,8 +237,17 @@ body {
 }
 
 .feature-5 {
-  background-color: #39a486;
-  padding: 10px;
+  background-color: #3ca49b;
+  padding: 5px;
+  letter-spacing: 1px;
+}
+
+.feature-6 {
+  background-color: #6da2c0;
+  padding: 5px;
+  letter-spacing: 1px;
+  color: #ffffff;
+
 }
 
 .scripty-heading {
