@@ -250,6 +250,15 @@ body {
 
 }
 
+.feature-7 {
+  background-color: #75c05a;
+  padding: 5px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  /* SVG as background image (IE9/Chrome/Safari/Opera) */
+  background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc3MjAiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMTAwJSIgeTE9IjEwMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgo8c3RvcCBzdG9wLWNvbG9yPSIjRkZGRkZGIiBvZmZzZXQ9IjAiLz48c3RvcCBzdG9wLWNvbG9yPSIjNzVDMDVBIiBvZmZzZXQ9IjEiLz4KPC9saW5lYXJHcmFkaWVudD4KPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNnNzIwKSIgLz4KPC9zdmc+);
+}
+
 .scripty-heading {
   font: 400 40px/1.5 'Pacifico', Helvetica, sans-serif;
   color: #cceeff;
@@ -277,6 +286,14 @@ body {
   //  margin: 2px;
 }
 
+.scripty-heading-4 {
+  font: 400 40px/1.5 'Pacifico', Helvetica, sans-serif;
+  color: #178c0a;
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  letter-spacing: 1px;
+  //  margin: 2px;
+}
 
 .feature-display {
   display: inline-block;
