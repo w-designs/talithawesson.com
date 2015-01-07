@@ -218,7 +218,7 @@ body {
     }
   }
   img {
-    max-height: 450px;
+    max-height: 650px;
   }
   margin-bottom: 15px;
   line-height: 1.3em;
@@ -289,6 +289,7 @@ body {
   line-height: 23px;
   /* SVG as background image (IE9/Chrome/Safari/Opera) */
   background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9ImcxMjciIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiNGRkZGRkYiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNCOEFFOUIiIG9mZnNldD0iMSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2cxMjcpIiAvPgo8L3N2Zz4=);
+  color: black;
 }
 
 .feature-9 {
@@ -300,6 +301,16 @@ body {
   /* SVG as background image (IE9/Chrome/Safari/Opera) */
   background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9ImczNTkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMTAwJSIgeTE9IjEwMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgo8c3RvcCBzdG9wLWNvbG9yPSIjRkZGRkZGIiBvZmZzZXQ9IjAiLz48c3RvcCBzdG9wLWNvbG9yPSIjMkE2M0EzIiBvZmZzZXQ9IjEiLz4KPC9saW5lYXJHcmFkaWVudD4KPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNnMzU5KSIgLz4KPC9zdmc+);
 ;
+}
+
+.feature-10 {
+  background-color: #464646;
+  padding: 35px 20px;
+}
+
+.feature-11 {
+  background-color: #a0a0a0;
+  padding: 35px 20px;
 }
 
 .scripty-heading {
@@ -345,6 +356,13 @@ body {
   text-align: center;
   letter-spacing: 1px;
   //  margin: 2px;
+}
+
+.scripty-heading-6 {
+  color: #f5f5f5;
+  font: 400 30px/1.5 'Pacifico', Helvetica, sans-serif;
+  text-align: center;
+
 }
 
 .feature-display {
@@ -427,3 +445,6 @@ body {
 
 }
 
+.center {
+  text-align: center;
+}
