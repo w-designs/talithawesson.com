@@ -101,6 +101,7 @@ body {
       font-size: 20px;
       color: #767676;
       text-shadow: 1px 1px 1px #9a9a9a;
+      text-align: center;
     }
   }
 
@@ -199,7 +200,7 @@ body {
   font: 400 20px/1.5 'Pacifico', Helvetica, sans-serif;
   letter-spacing: 2px;
   color: #4f4f4f;
-  text-align: left;
+  text-align: center;
   padding-top: 10px;
   margin-left: 30px;
 
@@ -382,11 +383,13 @@ body {
 }
 
 .testimonial {
-  max-height: 260px;
+//  max-height: 260px;
 //  width: 500px;
   overflow: scroll;
   border-radius: 4px;
   background-color: #e5e5e5;
+  margin: 0 auto 0 auto;
+  max-height: 17em;
 }
 
 .bold {
@@ -425,5 +428,10 @@ body {
   background: #f4f4f4;
   background: linear-gradient(#f4f4f4, #777777);
 
+}
+
+.logo {
+  margin: 0 auto 0 auto;
+  max-height: 30em;
 }
 
