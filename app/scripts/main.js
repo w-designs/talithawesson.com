@@ -23,6 +23,7 @@ jQuery(document).ready(function($) {
     // Iterate over an array of HTMLElements and set their heights
     for (var i = 0; i < arrayOfElements.length; i++) {
       $(arrayOfElements[i]).css('height', newHeight);
+      $(arrayOfElements[i]).addClass('show');
     }
   };
 

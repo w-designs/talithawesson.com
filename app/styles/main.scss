@@ -199,6 +199,11 @@ body {
 // About page row height and overflow-y
 .uniform-height {
   overflow-y: scroll;
+  opacity: 0;
+  transition: opacity 1500ms ease;
+  &.show {
+    opacity: 1;
+  }
 }
 
 .contact-info {
