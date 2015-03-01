@@ -1,7 +1,7 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 $fa-font-path: "/bower_components/font-awesome/fonts";
 
-@import '../bower_components/sass-bootstrap/lib/bootstrap';
+@import "../bower_components/sass-bootstrap/lib/bootstrap";
 @import "../bower_components/font-awesome/scss/font-awesome";
 
 .browsehappy {
@@ -196,6 +196,11 @@ body {
 //  color: black;
 //}
 
+// About page row height and overflow-y
+.uniform-height {
+  overflow-y: scroll;
+}
+
 .contact-info {
   font: 400 20px/1.5 'Pacifico', Helvetica, sans-serif;
   letter-spacing: 2px;
@@ -313,7 +318,7 @@ body {
 }
 
 .scripty-heading-2 {
-  font: 400 30px/1.5 'Pacifico', Helvetica, sans-serif;
+  font: 400 26px/1.5 'Pacifico', Helvetica, sans-serif;
   color: #797979;
   text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
   text-align: center;
