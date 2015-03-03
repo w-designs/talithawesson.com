@@ -7,11 +7,11 @@ jQuery(document).ready(function($) {
 
   /**
    *
-   * Takes an image and returns its height in pixels.
+   * Takes an elementID and returns its height in pixels.
    *
    */
-  var getImageHeight = function(image) {
-    return $(image).css('height');
+  var getHeight = function(element) {
+    return $(element).css('height');
   };
 
   /**
@@ -19,7 +19,7 @@ jQuery(document).ready(function($) {
    * Resizes an array of elements
    *
    */
-  var resizeElementHeight = function(arrayOfElements, newHeight) {
+  var resizeHeight = function(arrayOfElements, newHeight) {
     // Iterate over an array of HTMLElements and set their heights
     for (var i = 0; i < arrayOfElements.length; i++) {
       $(arrayOfElements[i]).css('height', newHeight);
@@ -28,6 +28,6 @@ jQuery(document).ready(function($) {
   };
 
   // Invoke our functions with necessary inputs
-  resizeElementHeight($('.uniform-height'), getImageHeight('#profile-image'));
+  resizeHeight($('.testimonials'), getHeight('.about'));
 
 });
