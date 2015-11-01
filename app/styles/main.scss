@@ -83,10 +83,23 @@ body {
   margin: 30px 0;
 }
 
+/* Space out the masthead */
+.header {
+  margin-bottom: 5px;
+  .text-muted {
+    letter-spacing: 10px;
+    font-variant: small-caps;
+    font-size: 20px;
+    color: #767676;
+    text-shadow: 1px 1px 1px #9a9a9a;
+    text-align: center;
+  }
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 1300px;
+    max-width: 980px;
   }
 
   /* Remove the padding we set earlier */
@@ -94,19 +107,6 @@ body {
   .footer {
     padding-left: 0;
     padding-right: 0;
-  }
-
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 5px;
-    .text-muted {
-      letter-spacing: 10px;
-      font-variant: small-caps;
-      font-size: 20px;
-      color: #767676;
-      text-shadow: 1px 1px 1px #9a9a9a;
-      text-align: center;
-    }
   }
 
   /* Remove the bottom border on the jumbotron for visual effect */
